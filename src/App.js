@@ -9,6 +9,7 @@ import Profile from "./pages/profile";
 import CompanyReg from './pages/companyReg';
 import CompanyDashboard from "./pages/CompanyDashboard";
 import SkillsDashboard from "./pages/SkillsDashboard";
+import UserDashboard from './components/UserDashboard';  // Import the UserDashboard component
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/comp" element={<CompanyReg />} />
           <Route path="/company-dashboard" element={<CompanyDashboard/>}/>
           <Route path="/skillsdashboard" element={<SkillsDashboard/>}/>
+          <UserDashboard />  {/* Render the UserDashboard component */}
         </Routes>
       </div>
     </Router>
